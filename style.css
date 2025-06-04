@@ -1,0 +1,84 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(-45deg, #3674B5, #5A91C2, #A3C4E3, #3674B5);
+  background-size: 400% 400%;
+  animation: gradientBG 12s ease infinite;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.container {
+  text-align: center;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 400px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #24588B;
+}
+
+.input-group {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+#cityInput {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #3674B5;
+  border-radius: 8px 0 0 8px;
+  width: 70%;
+  outline: none;
+}
+
+#locationBtn {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #5A91C2;
+  background: #3674B5;
+  color: #fff;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#locationBtn:hover {
+  background: #2F669E;
+}
+
+#getWeatherBtn {
+  padding: 10px 20px;
+  background: #24588B;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+#getWeatherBtn:hover {
+  background: #1E4C77;
+}
+
+.result {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #1A3D65;
+}
